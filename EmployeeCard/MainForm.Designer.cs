@@ -279,7 +279,7 @@ namespace EmployeeCard
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 450F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 480F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.leftparttableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.groupBox2, 1, 0);
@@ -305,7 +305,7 @@ namespace EmployeeCard
             this.leftparttableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.leftparttableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.leftparttableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.leftparttableLayoutPanel2.Size = new System.Drawing.Size(444, 592);
+            this.leftparttableLayoutPanel2.Size = new System.Drawing.Size(474, 592);
             this.leftparttableLayoutPanel2.TabIndex = 0;
             // 
             // groupbax
@@ -314,7 +314,7 @@ namespace EmployeeCard
             this.groupbax.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupbax.Location = new System.Drawing.Point(3, 3);
             this.groupbax.Name = "groupbax";
-            this.groupbax.Size = new System.Drawing.Size(438, 44);
+            this.groupbax.Size = new System.Drawing.Size(468, 44);
             this.groupbax.TabIndex = 0;
             this.groupbax.TabStop = false;
             this.groupbax.Text = "Отделы";
@@ -328,7 +328,7 @@ namespace EmployeeCard
             this.departmentCB.FormattingEnabled = true;
             this.departmentCB.Location = new System.Drawing.Point(3, 18);
             this.departmentCB.Name = "departmentCB";
-            this.departmentCB.Size = new System.Drawing.Size(432, 24);
+            this.departmentCB.Size = new System.Drawing.Size(462, 24);
             this.departmentCB.TabIndex = 0;
             this.departmentCB.ValueMember = "Id";
             // 
@@ -354,7 +354,7 @@ namespace EmployeeCard
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(3, 53);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(438, 506);
+            this.groupBox1.Size = new System.Drawing.Size(468, 506);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Сотрудники";
@@ -381,7 +381,7 @@ namespace EmployeeCard
             this.EmplGridView1.RowHeadersWidth = 51;
             this.EmplGridView1.RowTemplate.Height = 24;
             this.EmplGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.EmplGridView1.Size = new System.Drawing.Size(432, 485);
+            this.EmplGridView1.Size = new System.Drawing.Size(462, 485);
             this.EmplGridView1.TabIndex = 0;
             // 
             // idDataGridViewTextBoxColumn
@@ -467,7 +467,7 @@ namespace EmployeeCard
             this.exportToExcel});
             this.toolStrip1.Location = new System.Drawing.Point(0, 562);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(444, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(474, 27);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -542,9 +542,9 @@ namespace EmployeeCard
             // 
             this.groupBox2.Controls.Add(this.empdatatableLayoutPanel3);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point(453, 3);
+            this.groupBox2.Location = new System.Drawing.Point(483, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(626, 592);
+            this.groupBox2.Size = new System.Drawing.Size(596, 592);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Данные о сотруднике:";
@@ -562,7 +562,7 @@ namespace EmployeeCard
             this.empdatatableLayoutPanel3.RowCount = 2;
             this.empdatatableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.empdatatableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.empdatatableLayoutPanel3.Size = new System.Drawing.Size(620, 571);
+            this.empdatatableLayoutPanel3.Size = new System.Drawing.Size(590, 571);
             this.empdatatableLayoutPanel3.TabIndex = 0;
             // 
             // groupBox4
@@ -571,7 +571,7 @@ namespace EmployeeCard
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox4.Location = new System.Drawing.Point(3, 288);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(614, 280);
+            this.groupBox4.Size = new System.Drawing.Size(584, 280);
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Рабочие данные:";
@@ -591,7 +591,7 @@ namespace EmployeeCard
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(608, 259);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(578, 259);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // groupBox9
@@ -601,7 +601,7 @@ namespace EmployeeCard
             this.groupBox9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox9.Location = new System.Drawing.Point(3, 212);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(602, 44);
+            this.groupBox9.Size = new System.Drawing.Size(572, 44);
             this.groupBox9.TabIndex = 3;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Опыт работы:";
@@ -613,7 +613,7 @@ namespace EmployeeCard
             this.workexperienceDisplTxt.Location = new System.Drawing.Point(3, 18);
             this.workexperienceDisplTxt.Name = "workexperienceDisplTxt";
             this.workexperienceDisplTxt.ReadOnly = true;
-            this.workexperienceDisplTxt.Size = new System.Drawing.Size(596, 22);
+            this.workexperienceDisplTxt.Size = new System.Drawing.Size(566, 22);
             this.workexperienceDisplTxt.TabIndex = 1;
             // 
             // workexperienceHiddenTxt
@@ -638,7 +638,7 @@ namespace EmployeeCard
             this.groupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox5.Location = new System.Drawing.Point(3, 3);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(602, 44);
+            this.groupBox5.Size = new System.Drawing.Size(572, 44);
             this.groupBox5.TabIndex = 1;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Должность:";
@@ -651,7 +651,7 @@ namespace EmployeeCard
             this.Posttxt.Location = new System.Drawing.Point(3, 18);
             this.Posttxt.Name = "Posttxt";
             this.Posttxt.ReadOnly = true;
-            this.Posttxt.Size = new System.Drawing.Size(596, 22);
+            this.Posttxt.Size = new System.Drawing.Size(566, 22);
             this.Posttxt.TabIndex = 0;
             // 
             // groupBox6
@@ -661,7 +661,7 @@ namespace EmployeeCard
             this.groupBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox6.Location = new System.Drawing.Point(3, 53);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(602, 153);
+            this.groupBox6.Size = new System.Drawing.Size(572, 153);
             this.groupBox6.TabIndex = 2;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Образование:";
@@ -674,7 +674,7 @@ namespace EmployeeCard
             this.edacationtxt.Location = new System.Drawing.Point(3, 18);
             this.edacationtxt.Name = "edacationtxt";
             this.edacationtxt.ReadOnly = true;
-            this.edacationtxt.Size = new System.Drawing.Size(596, 132);
+            this.edacationtxt.Size = new System.Drawing.Size(566, 132);
             this.edacationtxt.TabIndex = 1;
             this.edacationtxt.Text = "";
             // 
@@ -693,7 +693,7 @@ namespace EmployeeCard
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox3.Location = new System.Drawing.Point(3, 3);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(614, 279);
+            this.groupBox3.Size = new System.Drawing.Size(584, 279);
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Персональные данные:";
@@ -712,7 +712,7 @@ namespace EmployeeCard
             this.EmpPersonDatatableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.EmpPersonDatatableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.EmpPersonDatatableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.EmpPersonDatatableLayoutPanel3.Size = new System.Drawing.Size(608, 258);
+            this.EmpPersonDatatableLayoutPanel3.Size = new System.Drawing.Size(578, 258);
             this.EmpPersonDatatableLayoutPanel3.TabIndex = 0;
             // 
             // groupBox8
@@ -721,7 +721,7 @@ namespace EmployeeCard
             this.groupBox8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox8.Location = new System.Drawing.Point(3, 153);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(602, 102);
+            this.groupBox8.Size = new System.Drawing.Size(572, 102);
             this.groupBox8.TabIndex = 3;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Адрес регистрации:";
@@ -734,7 +734,7 @@ namespace EmployeeCard
             this.AdressTxt.Location = new System.Drawing.Point(3, 18);
             this.AdressTxt.Name = "AdressTxt";
             this.AdressTxt.ReadOnly = true;
-            this.AdressTxt.Size = new System.Drawing.Size(596, 81);
+            this.AdressTxt.Size = new System.Drawing.Size(566, 81);
             this.AdressTxt.TabIndex = 0;
             this.AdressTxt.Text = "";
             this.AdressTxt.TextChanged += new System.EventHandler(this.AdressTxt_TextChanged);
@@ -751,7 +751,7 @@ namespace EmployeeCard
             this.photoSeparatortableLayoutPanel.Name = "photoSeparatortableLayoutPanel";
             this.photoSeparatortableLayoutPanel.RowCount = 1;
             this.photoSeparatortableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.photoSeparatortableLayoutPanel.Size = new System.Drawing.Size(602, 144);
+            this.photoSeparatortableLayoutPanel.Size = new System.Drawing.Size(572, 144);
             this.photoSeparatortableLayoutPanel.TabIndex = 4;
             // 
             // tableLayoutPanel2
@@ -769,7 +769,7 @@ namespace EmployeeCard
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(436, 138);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(406, 138);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // groupBox7
@@ -778,7 +778,7 @@ namespace EmployeeCard
             this.groupBox7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox7.Location = new System.Drawing.Point(3, 103);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(430, 44);
+            this.groupBox7.Size = new System.Drawing.Size(400, 44);
             this.groupBox7.TabIndex = 2;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Граждансво:";
@@ -791,7 +791,7 @@ namespace EmployeeCard
             this.CitizenTxt.Location = new System.Drawing.Point(3, 18);
             this.CitizenTxt.Name = "CitizenTxt";
             this.CitizenTxt.ReadOnly = true;
-            this.CitizenTxt.Size = new System.Drawing.Size(424, 22);
+            this.CitizenTxt.Size = new System.Drawing.Size(394, 22);
             this.CitizenTxt.TabIndex = 0;
             // 
             // box
@@ -800,7 +800,7 @@ namespace EmployeeCard
             this.box.Dock = System.Windows.Forms.DockStyle.Fill;
             this.box.Location = new System.Drawing.Point(3, 3);
             this.box.Name = "box";
-            this.box.Size = new System.Drawing.Size(430, 44);
+            this.box.Size = new System.Drawing.Size(400, 44);
             this.box.TabIndex = 0;
             this.box.TabStop = false;
             this.box.Text = "Возраст:";
@@ -813,7 +813,7 @@ namespace EmployeeCard
             this.Agetxt.Location = new System.Drawing.Point(3, 18);
             this.Agetxt.Name = "Agetxt";
             this.Agetxt.ReadOnly = true;
-            this.Agetxt.Size = new System.Drawing.Size(424, 22);
+            this.Agetxt.Size = new System.Drawing.Size(394, 22);
             this.Agetxt.TabIndex = 0;
             // 
             // birthtxt
@@ -822,7 +822,7 @@ namespace EmployeeCard
             this.birthtxt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.birthtxt.Location = new System.Drawing.Point(3, 53);
             this.birthtxt.Name = "birthtxt";
-            this.birthtxt.Size = new System.Drawing.Size(430, 44);
+            this.birthtxt.Size = new System.Drawing.Size(400, 44);
             this.birthtxt.TabIndex = 1;
             this.birthtxt.TabStop = false;
             this.birthtxt.Text = "Дата рождения:";
@@ -835,7 +835,7 @@ namespace EmployeeCard
             this.BithTxt.Location = new System.Drawing.Point(3, 18);
             this.BithTxt.Name = "BithTxt";
             this.BithTxt.ReadOnly = true;
-            this.BithTxt.Size = new System.Drawing.Size(424, 22);
+            this.BithTxt.Size = new System.Drawing.Size(394, 22);
             this.BithTxt.TabIndex = 0;
             // 
             // photoPictureBox_2

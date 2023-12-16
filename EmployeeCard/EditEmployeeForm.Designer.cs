@@ -265,6 +265,7 @@ namespace EmployeeCard
             this.chooseCardBtn.TabIndex = 20;
             this.chooseCardBtn.Text = "Карточка Сотрудника";
             this.chooseCardBtn.UseVisualStyleBackColor = true;
+            this.chooseCardBtn.Click += new System.EventHandler(this.chooseCardBtn_Click_1);
             // 
             // choosePhotoBtn
             // 

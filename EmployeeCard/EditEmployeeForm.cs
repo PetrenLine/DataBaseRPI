@@ -38,12 +38,6 @@ namespace EmployeeCard
         }
 
 
-
-
-
-
-
-
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -165,62 +159,63 @@ namespace EmployeeCard
                     TableFieldType = TableFieldTypes.nvarchar,
                     TableFieldValue = technicalCardName
                 });
-
-                if (_isEditMode)
-                {
-                    if (!string.IsNullOrEmpty(_photoPath))
-                    {
-
-                        var technicalFileName = $"{DateTime.Now.ToString($"yyyy_MM_dd_hh_ss_ms")}{Path.GetExtension(_photoPath)}";
-
-                        File.Copy(_photoPath, $"{currentFolder}\\ImegeData\\{technicalFileName}", true);
-                        personalDataFields.Add(Constants.FieldsNemes.EmplPersonalDateTable.PhotoFileName, new TableField
-                        {
-                            TableFieldType = TableFieldTypes.nvarchar,
-                            TableFieldValue = technicalFileName
-                        });
-
-                        personalDataFields[Constants.FieldsNemes.EmplPersonalDateTable.EmployeId].TableFieldValue
-                     = _id.ToString();
-                        workDataFields[Constants.FieldsNemes.EmplWorkDateTable.EmployeeId].TableFieldValue
-                         = _id.ToString();
-
-                        DBHelper.UpdateEntry(Constants.TableNames.EmployeesTableName, _id, employeeFields);
-                        DBHelper.UpdateEntry(Constants.TableNames.EmplPersonalDateTableName, new FieldForUpdate
-                        {
-                            FieldName = Constants.FieldsNemes.EmplPersonalDateTable.EmployeId,
-                            FieldValue = new TableField
-                            {
-                                TableFieldType = TableFieldTypes.integer,
-                                TableFieldValue = _id.ToString()
-                            }
-                        }, personalDataFields);
-                        DBHelper.UpdateEntry(Constants.TableNames.EmplWorkDateTableName, new FieldForUpdate
-                        {
-                            FieldName = Constants.FieldsNemes.EmplWorkDateTable.EmployeeId,
-                            FieldValue = new TableField
-                            {
-                                TableFieldType = TableFieldTypes.integer,
-                                TableFieldValue = _id.ToString()
-                            }
-                        }, workDataFields);
-                        DialogResult = DialogResult.OK;
-                    }
-                    else
-                    {
-                        var employeeId = DBHelper.InsertEntry(Constants.TableNames.EmployeesTableName, employeeFields);
-                        personalDataFields[Constants.FieldsNemes.EmplPersonalDateTable.EmployeId].TableFieldValue
-                            = employeeId.ToString();
-                        workDataFields[Constants.FieldsNemes.EmplWorkDateTable.EmployeeId].TableFieldValue
-                            = employeeId.ToString();
-                        DBHelper.InsertEntry(Constants.TableNames.EmplPersonalDateTableName, personalDataFields);
-                        DBHelper.InsertEntry(Constants.TableNames.EmplWorkDateTableName, workDataFields);
-                        DialogResult = DialogResult.OK;
-                    }
-
-                }
             }
+            if (_isEditMode)
+            {
+                if (!string.IsNullOrEmpty(_photoPath))
+                {
+
+                    var technicalFileName = $"{DateTime.Now.ToString($"yyyy_MM_dd_hh_ss_ms")}{Path.GetExtension(_photoPath)}";
+
+                    File.Copy(_photoPath, $"{currentFolder}\\ImegeData\\{technicalFileName}", true);
+                    personalDataFields.Add(Constants.FieldsNemes.EmplPersonalDateTable.PhotoFileName, new TableField
+                    {
+                        TableFieldType = TableFieldTypes.nvarchar,
+                        TableFieldValue = technicalFileName
+                    });
+                }
+                    personalDataFields[Constants.FieldsNemes.EmplPersonalDateTable.EmployeId].TableFieldValue
+                 = _id.ToString();
+                    workDataFields[Constants.FieldsNemes.EmplWorkDateTable.EmployeeId].TableFieldValue
+                     = _id.ToString();
+
+                    DBHelper.UpdateEntry(Constants.TableNames.EmployeesTableName, _id, employeeFields);
+                    DBHelper.UpdateEntry(Constants.TableNames.EmplPersonalDateTableName, new FieldForUpdate
+                    {
+                        FieldName = Constants.FieldsNemes.EmplPersonalDateTable.EmployeId,
+                        FieldValue = new TableField
+                        {
+                            TableFieldType = TableFieldTypes.integer,
+                            TableFieldValue = _id.ToString()
+                        }
+                    }, personalDataFields);
+                    DBHelper.UpdateEntry(Constants.TableNames.EmplWorkDateTableName, new FieldForUpdate
+                    {
+                        FieldName = Constants.FieldsNemes.EmplWorkDateTable.EmployeeId,
+                        FieldValue = new TableField
+                        {
+                            TableFieldType = TableFieldTypes.integer,
+                            TableFieldValue = _id.ToString()
+                        }
+                    }, workDataFields);
+                    DialogResult = DialogResult.OK;
+                }
+            
+            else
+            {
+                var employeeId = DBHelper.InsertEntry(Constants.TableNames.EmployeesTableName, employeeFields);
+                personalDataFields[Constants.FieldsNemes.EmplPersonalDateTable.EmployeId].TableFieldValue
+                    = employeeId.ToString();
+                workDataFields[Constants.FieldsNemes.EmplWorkDateTable.EmployeeId].TableFieldValue
+                    = employeeId.ToString();
+                DBHelper.InsertEntry(Constants.TableNames.EmplPersonalDateTableName, personalDataFields);
+                DBHelper.InsertEntry(Constants.TableNames.EmplWorkDateTableName, workDataFields);
+                DialogResult = DialogResult.OK;
+            }
+
+
         }
+
             private void choosePhotoBtn_Click(object sender, EventArgs e)
             {
                 if (chooseImegwDialog.ShowDialog() == DialogResult.OK)
@@ -229,7 +224,7 @@ namespace EmployeeCard
 
                 }
             }
-        
+
             private void chooseCardBtn_Click(object sender, EventArgs e)
             {
 
@@ -239,5 +234,10 @@ namespace EmployeeCard
 
                 }
             }
+
+            private void chooseCardBtn_Click_1(object sender, EventArgs e)
+            {
+
+            }
         }
-    } 
+    }
